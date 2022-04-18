@@ -3,6 +3,7 @@ import HelloSection from "../components/HelloSection/HelloSection";
 import { homeObjOne, homeObjTwo } from "../components/InfoSection/InfoData";
 import InfoSection from "../components/InfoSection/InfoSection";
 import Navbar from "../components/Navbar/Navbar";
+import ProjectSection from "../components/ProjectSection/ProjectSection";
 import SideBar from "../components/Sidebar/Sidebar";
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <HelloSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <ProjectSection />
     </>
   );
 };
