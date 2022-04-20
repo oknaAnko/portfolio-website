@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import windowImg from "../../images/window.jpg";
+import { BsCodeSlash } from "react-icons/bs";
 
 export const ProjectContainer = styled.div`
   height: 800px;
@@ -27,7 +28,7 @@ export const ProjectWrapper = styled.div`
   grid-gap: 20px;
   padding: 0 50px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -62,7 +63,7 @@ export const ProjectCard = styled.div`
   &:hover {
     transform: scale(1.05);
     transition: all 0.25s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 `;
 
@@ -72,7 +73,11 @@ export const ProjectBackground = styled.div`
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  /* opacity: 1; */
   transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &:hover {
     opacity: 1;
@@ -86,4 +91,17 @@ export const ProjectP = styled.p`
   color: #fff;
   text-shadow: 0 0 4px #000;
   transition: all 0.25s ease-in-out;
+  margin-bottom: 30px;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`;
+
+export const IconCode = styled(BsCodeSlash)`
+  font-size: 25px;
+  margin-top: 8px;
+  fill: #fff;
 `;

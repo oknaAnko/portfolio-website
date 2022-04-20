@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SmallButton } from "../ButtonElement";
 import {
   ProjectContainer,
   ProjectH2,
@@ -7,6 +7,8 @@ import {
   ProjectCard,
   ProjectBackground,
   ProjectP,
+  BtnWrap,
+  IconCode,
 } from "./ProjectElements";
 
 const ProjectSection = () => {
@@ -17,16 +19,43 @@ const ProjectSection = () => {
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
+            <BtnWrap>
+              <SmallButton to="#" primary="false">
+                demo
+              </SmallButton>
+              <SmallButton to="#" primary="false">
+                <span>code</span>
+                <IconCode />
+              </SmallButton>
+            </BtnWrap>
           </ProjectBackground>
         </ProjectCard>
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
+            <BtnWrap>
+              <SmallButton to="#" primary="false">
+                demo
+              </SmallButton>
+              <SmallButton to="#" primary="false">
+                <span>code</span>
+                <IconCode />
+              </SmallButton>
+            </BtnWrap>
           </ProjectBackground>
         </ProjectCard>
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
+            <BtnWrap>
+              <SmallButton to="#" primary="false">
+                demo
+              </SmallButton>
+              <SmallButton to="#" primary="false">
+                <span>code</span>
+                <IconCode />
+              </SmallButton>
+            </BtnWrap>
           </ProjectBackground>
         </ProjectCard>
       </ProjectWrapper>

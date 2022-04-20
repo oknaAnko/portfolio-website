@@ -1,23 +1,41 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { Link } from "react-scroll";
 
 export const Button = styled(Link)`
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  border: none;
-  border-radius: 50px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 5px;
   outline: none;
-  background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
-  color: ${({ dark }) => (dark ? "#010606" : "#ddd")};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   white-space: nowrap;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+  background-color: #fff;
   transition: all 0.2 ease-in-out;
   cursor: pointer;
 
   &:hover {
-    background: ${({ primary }) => (primary ? "#307035" : "#01BF71")};
+    background-color: red;
     transition: all 0.2 ease-in-out;
+  }
+`;
+
+export const SmallButton = styled(Button)`
+  flex-direction: column;
+  white-space: normal;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+
+  &:hover {
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px -1px white;
   }
 `;
