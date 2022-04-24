@@ -5,6 +5,7 @@ import InfoSection from "../components/InfoSection/InfoSection";
 import Navbar from "../components/Navbar/Navbar";
 import ProjectSection from "../components/ProjectSection/ProjectSection";
 import SideBar from "../components/Sidebar/Sidebar";
+import TechSection from "../components/TechSection/TechSection";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +18,9 @@ const HomePage = () => {
       <Navbar toggleIsOpen={toggleIsOpen} />
       <HelloSection />
       <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
+      {/* <InfoSection {...homeObjTwo} /> */}
       <ProjectSection />
+      <TechSection />
     </>
   );
 };
