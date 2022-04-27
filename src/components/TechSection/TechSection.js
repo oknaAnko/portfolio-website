@@ -26,20 +26,59 @@ const TechSection = () => {
         <IconWrap>
           <ReactIcon />
           <Overlay>
-            <OverlayP>REACT</OverlayP>
+            <OverlayP>React</OverlayP>
           </Overlay>
         </IconWrap>
-
-        <ReduxIcon />
-        <TsIcon />
-        <JsIcon />
-        <WebpackIcon />
+        <IconWrap>
+          <ReduxIcon />
+          <Overlay>
+            <OverlayP>Redux</OverlayP>
+          </Overlay>
+        </IconWrap>
+        <IconWrap>
+          <TsIcon />
+          <Overlay>
+            <OverlayP>Typescript</OverlayP>
+          </Overlay>
+        </IconWrap>
+        <IconWrap>
+          <JsIcon />
+          <Overlay>
+            <OverlayP>Javascript</OverlayP>
+          </Overlay>
+        </IconWrap>
+        <IconWrap>
+          <WebpackIcon />
+          <Overlay>
+            <OverlayP>Webpack</OverlayP>
+          </Overlay>
+        </IconWrap>
       </TechWrapperUp>
       <TechWrapperDown>
-        <HtmlIcon />
-        <CssIcon />
-        <BootstrapIcon />
-        <FigmaIcon />
+        <IconWrap>
+          <HtmlIcon />
+          <Overlay>
+            <OverlayP>Html</OverlayP>
+          </Overlay>
+        </IconWrap>
+        <IconWrap>
+          <CssIcon />
+          <Overlay>
+            <OverlayP>CSS</OverlayP>
+          </Overlay>
+        </IconWrap>
+        <IconWrap>
+          <BootstrapIcon />
+          <Overlay>
+            <OverlayP>Bootstrap</OverlayP>
+          </Overlay>
+        </IconWrap>
+        <IconWrap>
+          <FigmaIcon />
+          <Overlay>
+            <OverlayP>Figma</OverlayP>
+          </Overlay>
+        </IconWrap>
       </TechWrapperDown>
     </TechContainer>
   );

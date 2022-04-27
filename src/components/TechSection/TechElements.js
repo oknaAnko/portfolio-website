@@ -44,11 +44,11 @@ export const TechH2 = styled.h2`
 export const IconWrap = styled.div`
   perspective: 50em;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const Overlay = styled.div`
-  width: 60px;
+  width: 80px;
   height: 60px;
   position: absolute;
   z-index: 1;
