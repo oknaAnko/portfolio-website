@@ -26,16 +26,27 @@ export const Button = styled(Link)`
 `;
 
 export const SmallButton = styled(Button)`
-  flex-direction: column;
+  /* flex-direction: column; */
   white-space: normal;
-  border: none;
+  /* border: none; */
   font-size: 14px;
   color: #fff;
   background-color: transparent;
 
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+
   &:hover {
-    border: none;
-    background-color: transparent;
-    box-shadow: 0px 0px 10px -1px white;
+    /* border: none; */
+    color: #fff;
+    background-color: #101010;
+    /* box-shadow: 0px 0px 10px -1px white; */
   }
 `;
