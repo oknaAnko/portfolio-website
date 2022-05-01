@@ -1,6 +1,6 @@
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 import windowImg from "../../images/window.jpg";
-import { BsCodeSlash } from "react-icons/bs";
+import { BsCodeSlash, BsSearch } from "react-icons/bs";
 
 // @mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
 //   transition-property: $property;
@@ -81,8 +81,8 @@ export const ProjectBackground = styled.div`
   height: 100%;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
-  /* opacity: 0; */
-  opacity: 1;
+  opacity: 0;
+  /* opacity: 1; */
   /* transition: all 0.25s ease-in-out; */
   display: flex;
   flex-direction: column;
@@ -142,23 +142,23 @@ export const ProjectP = styled.p`
   }
 `;
 
-export const BtnWrap = styled.div`
+export const BtnContainer = styled.div`
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
+`;
 
+export const BtnWrap = styled.div`
   position: relative;
   top: 20px;
   left: 0;
   width: 35px;
   height: 35px;
-  opacity: 1;
-  /* margin-right: 10px; */
-  /* opacity: 0; */
+  /* opacity: 1; */
+  margin-right: 10px;
+  opacity: 0;
 
   &:nth-child(2) {
-    margin-right: 10px;
-    background-color: red;
+    margin-right: 0;
   }
 
   ${ProjectCard}:hover & {
@@ -183,8 +183,15 @@ export const BtnWrap = styled.div`
   }
 `;
 
-export const IconCode = styled(BsCodeSlash)`
-  font-size: 25px;
-  margin-top: 8px;
+const iconStyle = css`
+  font-size: 16px;
   fill: #fff;
+`;
+
+export const IconCode = styled(BsCodeSlash)`
+  ${iconStyle}
+`;
+
+export const IconSearch = styled(BsSearch)`
+  ${iconStyle}
 `;

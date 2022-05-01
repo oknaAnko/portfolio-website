@@ -26,13 +26,10 @@ export const Button = styled(Link)`
 `;
 
 export const SmallButton = styled(Button)`
-  /* flex-direction: column; */
   white-space: normal;
-  /* border: none; */
-  font-size: 14px;
   color: #fff;
   background-color: transparent;
-
+  padding: 0;
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
@@ -44,9 +41,7 @@ export const SmallButton = styled(Button)`
   transition-delay: 0s;
 
   &:hover {
-    /* border: none; */
     color: #fff;
     background-color: #101010;
-    /* box-shadow: 0px 0px 10px -1px white; */
   }
 `;

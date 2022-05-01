@@ -7,8 +7,10 @@ import {
   ProjectCard,
   ProjectBackground,
   ProjectP,
+  BtnContainer,
   BtnWrap,
   IconCode,
+  IconSearch,
 } from "./ProjectElements";
 
 const ProjectSection = () => {
@@ -19,43 +21,52 @@ const ProjectSection = () => {
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
-            <BtnWrap>
-              <SmallButton to="#" primary="false">
-                demo
-              </SmallButton>
-              <SmallButton to="#" primary="false">
-                <span>code</span>
-                <IconCode />
-              </SmallButton>
-            </BtnWrap>
+            <BtnContainer>
+              <BtnWrap>
+                <SmallButton to="#" primary="false">
+                  <IconCode />
+                </SmallButton>
+              </BtnWrap>
+              <BtnWrap>
+                <SmallButton to="#" primary="false">
+                  <IconSearch />
+                </SmallButton>
+              </BtnWrap>
+            </BtnContainer>
           </ProjectBackground>
         </ProjectCard>
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
-            <BtnWrap>
-              <SmallButton to="#" primary="false">
-                demo
-              </SmallButton>
-              <SmallButton to="#" primary="false">
-                <span>code</span>
-                <IconCode />
-              </SmallButton>
-            </BtnWrap>
+            <BtnContainer>
+              <BtnWrap>
+                <SmallButton to="#" primary="false">
+                  <IconCode />
+                </SmallButton>
+              </BtnWrap>
+              <BtnWrap>
+                <SmallButton to="#" primary="false">
+                  <IconSearch />
+                </SmallButton>
+              </BtnWrap>
+            </BtnContainer>
           </ProjectBackground>
         </ProjectCard>
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
-            <BtnWrap>
-              <SmallButton to="#" primary="false">
-                demo
-              </SmallButton>
-              <SmallButton to="#" primary="false">
-                <span>code</span>
-                <IconCode />
-              </SmallButton>
-            </BtnWrap>
+            <BtnContainer>
+              <BtnWrap>
+                <SmallButton to="#" primary="false">
+                  <IconCode />
+                </SmallButton>
+              </BtnWrap>
+              <BtnWrap>
+                <SmallButton to="#" primary="false">
+                  <IconSearch />
+                </SmallButton>
+              </BtnWrap>
+            </BtnContainer>
           </ProjectBackground>
         </ProjectCard>
       </ProjectWrapper>
