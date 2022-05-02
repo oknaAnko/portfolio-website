@@ -112,7 +112,7 @@ export const ProjectP = styled.p`
 
   ${ProjectCard}:hover & {
     transition: all 0.4s ease-in-out;
-    transition-delay: 0.45s;
+    /* transition-delay: 0.45s; */
     top: 0;
     opacity: 1;
   }

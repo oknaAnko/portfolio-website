@@ -1,5 +1,5 @@
 import React from "react";
-import { SmallButton } from "../ButtonElement";
+import ProjectButtons from "./ProjectButtons";
 import {
   ProjectContainer,
   ProjectH2,
@@ -7,10 +7,6 @@ import {
   ProjectCard,
   ProjectBackground,
   ProjectP,
-  BtnContainer,
-  BtnWrap,
-  IconCode,
-  IconSearch,
 } from "./ProjectElements";
 
 const ProjectSection = () => {
@@ -21,52 +17,37 @@ const ProjectSection = () => {
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
-            <BtnContainer>
-              <BtnWrap>
-                <SmallButton to="#" primary="false">
-                  <IconCode />
-                </SmallButton>
-              </BtnWrap>
-              <BtnWrap>
-                <SmallButton to="#" primary="false">
-                  <IconSearch />
-                </SmallButton>
-              </BtnWrap>
-            </BtnContainer>
+            <ProjectButtons />
           </ProjectBackground>
         </ProjectCard>
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
-            <BtnContainer>
-              <BtnWrap>
-                <SmallButton to="#" primary="false">
-                  <IconCode />
-                </SmallButton>
-              </BtnWrap>
-              <BtnWrap>
-                <SmallButton to="#" primary="false">
-                  <IconSearch />
-                </SmallButton>
-              </BtnWrap>
-            </BtnContainer>
+            <ProjectButtons />
           </ProjectBackground>
         </ProjectCard>
         <ProjectCard>
           <ProjectBackground>
             <ProjectP>Lorem lorem</ProjectP>
-            <BtnContainer>
-              <BtnWrap>
-                <SmallButton to="#" primary="false">
-                  <IconCode />
-                </SmallButton>
-              </BtnWrap>
-              <BtnWrap>
-                <SmallButton to="#" primary="false">
-                  <IconSearch />
-                </SmallButton>
-              </BtnWrap>
-            </BtnContainer>
+            <ProjectButtons />
+          </ProjectBackground>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectBackground>
+            <ProjectP>Lorem lorem</ProjectP>
+            <ProjectButtons />
+          </ProjectBackground>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectBackground>
+            <ProjectP>Lorem lorem</ProjectP>
+            <ProjectButtons />
+          </ProjectBackground>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectBackground>
+            <ProjectP>Lorem lorem</ProjectP>
+            <ProjectButtons />
           </ProjectBackground>
         </ProjectCard>
       </ProjectWrapper>
