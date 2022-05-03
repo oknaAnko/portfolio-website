@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components/macro";
 import windowImg from "../../images/window.jpg";
 import { BsCodeSlash, BsSearch } from "react-icons/bs";
+import { colors } from "../../styles/variables";
 
 // @mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
 //   transition-property: $property;
@@ -16,15 +17,19 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ccc;
+  /* background: #ccc; */
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
+    padding: 70px 0;
+  }
+
+  /* @media screen and (max-width: 768px) {
     height: 1100px;
   }
 
   @media screen and (max-width: 480px) {
     height: 1300px;
-  }
+  } */
 `;
 
 export const ProjectWrapper = styled.div`
@@ -48,7 +53,7 @@ export const ProjectWrapper = styled.div`
 
 export const ProjectH2 = styled.h2`
   font-size: 2.5rem;
-  color: #fff;
+  color: ${colors.dark};
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -72,7 +77,16 @@ export const ProjectCard = styled.div`
   &:hover {
     transform: scale(1.05);
     transition: all 0.25s ease-in-out;
-    /* cursor: pointer; */
+  }
+
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    height: 230px;
+    width: 220px;
+  }
+
+  @media screen and (max-width: 960px) and (orientation: landscape) {
+    height: 170px;
+    width: 160px;
   }
 `;
 
