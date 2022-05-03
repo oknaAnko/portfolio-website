@@ -5,7 +5,7 @@ import { DiJavascript1, DiCss3 } from "react-icons/di";
 import { colors } from "../../styles/variables";
 
 export const TechContainer = styled.div`
-  /* height: 800px; */
+  height: 490px;
   padding: 100px 0;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,11 @@ export const TechContainer = styled.div`
 
   @media screen and (max-width: 640px) {
     padding: 70px 0;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 360px) {
+    height: 680px;
   }
 `;
 

@@ -11,7 +11,7 @@ import { colors } from "../../styles/variables";
 // }
 
 export const ProjectContainer = styled.div`
-  /* height: 800px; */
+  height: 1020px;
   padding: 100px 0;
   display: flex;
   flex-direction: column;
@@ -19,17 +19,18 @@ export const ProjectContainer = styled.div`
   align-items: center;
   /* background: #ccc; */
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1100px) {
+    height: 1380px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 2400px;
     padding: 70px 0;
   }
 
-  /* @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
   @media screen and (max-width: 480px) {
-    height: 1300px;
-  } */
+    height: 1730px;
+  }
 `;
 
 export const ProjectWrapper = styled.div`
@@ -84,10 +85,10 @@ export const ProjectCard = styled.div`
     width: 220px;
   }
 
-  @media screen and (max-width: 960px) and (orientation: landscape) {
+  /* @media screen and (max-width: 960px) and (orientation: landscape) {
     height: 170px;
     width: 160px;
-  }
+  } */
 `;
 
 export const ProjectBackground = styled.div`

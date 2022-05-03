@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <FooterContainer>
+      <FooterContainer id="contact">
         <FooterH2>Pogadajmy!</FooterH2>
         <FooterWrapper>
           <FooterP>email.email@gmail.com</FooterP>

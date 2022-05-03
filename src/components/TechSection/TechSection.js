@@ -20,7 +20,7 @@ import {
 
 const TechSection = () => {
   return (
-    <TechContainer>
+    <TechContainer id="technologies">
       <TechH2>Technologie</TechH2>
       <TechWrapperUp>
         <IconWrap>
