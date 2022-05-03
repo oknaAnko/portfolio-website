@@ -1,23 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavLinks,
-  NavBtn,
-  NavBtnLink,
-} from "./NavbarElements";
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from "./NavbarElements";
 
 const Navbar = ({ toggleIsOpen }) => {
+  const [scrollNav, setScrollnav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollnav(true);
+    } else {
+      setScrollnav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">aa</NavLogo>
+          <NavLogo to="/" scrollNav={scrollNav}>
+            a_A
+          </NavLogo>
           <MobileIcon onClick={toggleIsOpen}>
             <FaBars />
           </MobileIcon>
@@ -35,9 +41,6 @@ const Navbar = ({ toggleIsOpen }) => {
               <NavLinks to="kontakt">Kontakt</NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/signin">SignIn</NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
