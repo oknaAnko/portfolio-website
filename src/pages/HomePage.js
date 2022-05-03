@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 import ProjectSection from "../components/ProjectSection/ProjectSection";
 import SideBar from "../components/Sidebar/Sidebar";
 import TechSection from "../components/TechSection/TechSection";
+import Footer from "../components/Footer/Footer";
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const HomePage = () => {
       {/* <InfoSection {...homeObjTwo} /> */}
       <ProjectSection />
       <TechSection />
+      <Footer />
     </>
   );
 };
